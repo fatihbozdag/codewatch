@@ -1,0 +1,28 @@
+[project]
+name = "codewatch"
+version = "0.1.0"
+description = "Live terminal view of files being written or changed"
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "Fatih Bozdağ" }]
+requires-python = ">=3.11"
+dependencies = ["textual>=0.86", "watchfiles>=0.24", "rich>=13"]
+keywords = ["terminal", "tui", "file-watcher", "diff", "textual"]
+classifiers = [
+    "Environment :: Console",
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development",
+]
+
+[project.urls]
+Homepage = "https://github.com/fatihbozdag/codewatch"
+Issues = "https://github.com/fatihbozdag/codewatch/issues"
+
+[project.scripts]
+codewatch = "codewatch.app:main"
+
+[build-system]
+requires = ["hatchling>=1.27"]
+build-backend = "hatchling.build"
